@@ -21,18 +21,18 @@ hex = 0xFF
 # type checks
 
 
-IO.puts(bin === 7)
-IO.puts(hex === 255)
-IO.puts(:true === true)
-IO.puts(:test === "test")
-IO.puts(1 > 2)
-IO.puts(3 == 3)
-IO.puts(3 == 3.0)
-IO.puts(3 === 3.0)
-IO.puts(is_boolean(bool1))
-IO.puts(is_atom(:test))
-IO.puts(is_bitstring("Oi"))
-IO.puts(is_float(23))
-IO.puts(is_float(23.33))
-IO.puts(is_number(23))
-IO.puts(is_number(23.33))
+IO.puts(bin === 7) # true
+IO.puts(hex === 255) # true
+IO.puts(:true === true) # true
+IO.puts(:test === "test") # false
+IO.puts(1 > 2) # false
+IO.puts(3 == 3) # true
+IO.puts(3 == 3.0) # true
+IO.puts(3 === 3.0) # false
+IO.puts(is_boolean(bool1)) # true
+IO.puts(is_atom(:test)) # true
+IO.puts(is_bitstring("Oi")) # true
+IO.puts(is_float(23)) # false
+IO.puts(is_float(23.33)) # true
+IO.puts(is_number(23)) # true
+IO.puts(is_number(23.33)) # true
